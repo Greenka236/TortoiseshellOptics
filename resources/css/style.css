@@ -99,7 +99,7 @@ figure img {
 
 .philosophy, .appointments {
   width: 35%;
-  padding: 0 2.5%;
+  padding: 2.5%;
 }
 
 .header {
@@ -120,7 +120,6 @@ footer {
   max-width: 960px;
   margin: 5rem auto 0 auto;
   background-color: azure;
-  padding: 4rem;
 }
 
 footer img {
@@ -132,4 +131,31 @@ footer img {
   color: black;
   display: flex;
   align-items: center;
+  padding: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main_banner {
+    height: 22rem;
+    padding: 0;
+    background-position: center;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  .headline {
+    padding: 0.75rem 4rem;
+    margin: 5rem 2rem auto auto;
+  }
+
+  .headline span {
+    font-size: 1.33rem;
+  }
 }
