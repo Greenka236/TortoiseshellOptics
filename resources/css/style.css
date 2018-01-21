@@ -42,11 +42,17 @@ header {
 
 nav span {
   padding: 1rem;
+  text-decoration: none;
+  color: white;
 }
 
 nav span a {
   text-decoration: none;
   color: white;
+}
+
+.above650 {
+  display: none;
 }
 
 .headline {
@@ -67,7 +73,7 @@ nav span a {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items:
+  align-items: center;
 }
 
 figure {
@@ -134,7 +140,7 @@ footer img {
   padding: 4rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width:1024px) {
   .main_banner {
     height: 22rem;
     padding: 0;
@@ -157,5 +163,76 @@ footer img {
 
   .headline span {
     font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .main_banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .page_name span {
+    display: none;
+  }
+
+  .over650 {
+    display: none;
+  }
+
+  .above650 {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .headline {
+    padding: 1rem 0;
+    margin: 9rem 0 0 0;
+    display: block;
+    text-align: center;
+    float: none;
+  }
+
+  .icons {
+    flex-flow: column;
+    margin: 2.23rem auto;
+  }
+
+  figure {
+    padding: 1.54rem 0;
+    justify-content: center;
+    height: auto;
+  }
+
+  figure img {
+    padding-bottom: 1rem;
+  }
+
+  figcaption {
+    font-size: 0.77rem;
+  }
+
+  .about {
+    flex-flow: column;
+    font-size: 0.77rem;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  .header {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .page_name_footer {
+    justify-content: center;
+  }
+  .page_name_footer span {
+    display: none;
   }
 }
